@@ -52,8 +52,8 @@ async def handle_client(reader, writer):
 
 async def main():
     # 로컬 테스트를 위해 127.0.0.1과 2222번 포트 사용
-    server = await asyncio.start_server(handle_client, '0.0.0.0', 2223)
-    print(f"[*] 허니팟 서버 구동 중: 127.0.0.1:2223")
+    server = await asyncio.start_server(handle_client, '0.0.0.0', 2222)
+    print(f"[*] 허니팟 서버 구동 중: 127.0.0.1:2")
 
     async with server:
         await server.serve_forever()
