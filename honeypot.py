@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 # 로그가 저장될 파일명
-LOG_FILE = "honeypot_log.json"
+LOG_FILE = "/var/log/honeypot/honeypot_log.json"
 
 async def handle_client(reader, writer):
     # 1. 접속한 클라이언트(공격자)의 IP 및 포트 정보 추출
